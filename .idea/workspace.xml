@@ -5,52 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87b8a0a-d552-4912-863c-030a0bdf74d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/messenger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/packages/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/routes/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/routes/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/docker-compose.override.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/src/Controller/QuestionController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/templates/question/show.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony-project/translations/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +138,7 @@
       <workItem from="1681895502136" duration="118000" />
       <workItem from="1682145333144" duration="8456000" />
       <workItem from="1682162092375" duration="10476000" />
-      <workItem from="1682185265625" duration="531000" />
+      <workItem from="1682185265625" duration="1669000" />
     </task>
     <servers />
   </component>
