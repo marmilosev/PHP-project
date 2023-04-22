@@ -2,13 +2,14 @@
 
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class QuestionController
+class QuestionController extends AbstractController
 {
     /**
-     * @Route("/")
+     * [Route("/")]
      */
     public function homepage()
     {
@@ -22,7 +23,15 @@ class QuestionController
      */
     public function show($question)
     {
-        return new Response(sprintf('Hello from different page "%q"!', $question));
+        $answers = [
+            'Cat', 'Dog', ' Giraffe'
+        ];
+
+        return $this->render('question/show.html.twig', [
+           'question' => ucwords(str_replace('-', '-', $question)),
+            'answers' => $answers,
+        ]);
+        return new Response('Hello from different page.');
 
     }
 }
