@@ -1,5 +1,11 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# controllers:
+#    resource:
+#        path: ../src/Controller/
+#        namespace: App\Controller
+#    type: attribute
+index:
+    path: /
+    controller: App\Controller\QuestionController::homepage
+index_show:
+    path: /questions/{question}
+    controller: App\Controller\QuestionController::show
