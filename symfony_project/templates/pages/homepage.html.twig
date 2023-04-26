@@ -1,0 +1,24 @@
+{% extends '@WebProfiler/Profiler/base.html.twig' %}
+
+
+{% block title %}
+    BookStore
+{%  endblock %}
+
+{% block stylesheets %}
+    <link href="{{asset('css/appHomepage.css')}}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Welcome to the BookStore</h1>
+</div>
+    <div>
+        <ul>
+            <li class="menu-list"><a href="login.html.twig">Login</a></li>
+            <li class="menu-list"><a href="registration.html.twig">Registration</a></li>
+            <li class="menu-list"><a href="homepage.html.twig">Homepage</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
