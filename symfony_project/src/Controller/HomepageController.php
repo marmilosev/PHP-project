@@ -13,9 +13,7 @@ class HomepageController extends AbstractController
      * @return Response
      */
     public function homepage(){
-<<<<<<< HEAD
         return $this->render('homepage/homepage.html.twig');
-=======
         return $this->render('pages/homepage.html.twig');
     }
 
@@ -31,6 +29,5 @@ class HomepageController extends AbstractController
      */
     public function registration(){
         return $this->render('pages/registration.html.twig');
->>>>>>> 2b44b45 (Homepage with links and started doing registration)
     }
 }
