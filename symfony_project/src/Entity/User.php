@@ -52,7 +52,7 @@ class User implements UserInterface
      */
     private $address;
     /**
-     * @ORM\Column(type="Integer", length=10, unique=true)
+     * @ORM\Column(type="integer", length=10, unique=true)
      * @Assert\NotBlank()
      */
     private $postNumber;
