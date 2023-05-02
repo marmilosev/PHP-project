@@ -7,7 +7,18 @@
             <h3>Registration</h3>
         </div>
         <div>
-            {{ form(form) }}
+            {{ form_start(form) }}
+            {{ form_row(form.firstName) }}
+            {{ form_row(form.lastName) }}
+            {{ form_row(form.email) }}
+            {{ form_row(form.username) }}
+            {{ form_row(form.password) }}
+            {{ form_row(form.address) }}
+            {{ form_row(form.postNumber) }}
+            {{ form_row(form.city) }}
+            {{ form_row(form.country) }}
+            {{ form_end(form) }}
         </div>
+
     </div>
 {% endblock %}
