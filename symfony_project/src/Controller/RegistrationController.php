@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use ContainerFsuv0eQ\getSecurity_Validator_UserPasswordService;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,19 +20,13 @@ class RegistrationController extends AbstractController
      * @param $encoder
      * @return Response
      */
-    public function register(Request $request):Response
+    public function register(Request $request, EntityManagerInterface $entityManager):Response
     {
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
-//            $user->setPassword($encoder->encodePassword($user, $user->getPassword()));
-            $entityManager = $this->getDoctrine()->getManager();
-
-            $plainPassword = $form->get('password')->getData();
-            $encodedPassword = $this->get('security.password_encoder')->encodePassword($user, $plainPassword);
-            $user->setPassword($encodedPassword);
 
             $entityManager->persist($user);
             $entityManager->flush();
