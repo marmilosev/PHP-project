@@ -15,9 +15,9 @@
 </div>
     <div>
         <ul>
-            <li class="menu-list"><a href="login.html.twig">Login</a></li>
-            <li class="menu-list"><a href="registration.html.twig">Registration</a></li>
-            <li class="menu-list"><a href="homepage.html.twig">Homepage</a></li>
+            <li class="menu-list"><a href="{{ path('app_login') }}">Login</a></li>
+            <li class="menu-list"><a href="{{ path('app_registration') }}">Registration</a></li>
+            <li class="menu-list"><a href="{{ path('app_homepage') }}">Homepage</a></li>
         </ul>
     </div>
 {% endblock %}
