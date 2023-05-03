@@ -13,6 +13,15 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RegistrationController extends AbstractController
 {
+    public function getRegistration(App $app){
+        // Render Twig template in route
+        $app->get('/events', function ($request, $response, $args) {
+            return $this->view->render($response, 'events.html.twig');
+        });
+
+// Run app
+        $app->run();
+    }
     /**
      * @Route("/registration")
      * @param Request $request
