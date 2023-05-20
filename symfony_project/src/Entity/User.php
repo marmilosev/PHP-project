@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
-use App\Validator\Constraints\EUCountry;
+use App\Validator as CustomAssert;
 
 /**
  * @ORM\Entity()
@@ -107,7 +107,7 @@ class User
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
-     * @EUCountry
+     * @CustomAssert
      */
     private $country;
 
