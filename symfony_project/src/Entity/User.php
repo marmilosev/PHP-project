@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
+use App\Validator\Constraints\EUCountry;
 
 /**
  * @ORM\Entity()
@@ -23,47 +24,90 @@ class User
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank
+     * @Assert\Length(
+     *     min=1,
+     *     max=30,
+     *     minMessage="Your first name must be at least {{limit}} character long",
+     *     maxMessage="Your first name cannot be larger than {{limit}} characters"
+     *     )
+     *  * @Assert\Regex(
+     *     pattern="/^[a-zA-Z]+$/",
+     *     message="Your first name must only contain letters"
+     * )
      */
     private $firstName;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Length(
+     *     min=1,
+     *     max=30,
+     *     minMessage="Your first name must be at least {{limit}} character long",
+     *     maxMessage="Your first name cannot be larger than {{limit}} characters"
+     *     )
+     *  * @Assert\Regex(
+     *     pattern="/^[a-zA-Z]+$/",
+     *     message="Your first name must only contain letters"
+     * )
      */
     private $lastName;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
-     * @Assert\Email()
+     * @Assert\Email(
+     *     message = "The email '{{ value }}' is not a valid email."
+     * )
      */
     private $email;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^[a-zA-Z0-9#$%&_\-]+$/",
+     *     message="The username must contain only letters, numbers and #$%&_-"
+     * )
      */
     private $username;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&*()\-+])[A-Za-z\d@#$%^&*()\-+]{8,}$/",
+     *     message="The password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character (@#$%^&*()-+)"
+     * )
      */
     private $password;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^[a-zA-Z\s]+\s+\d+$/",
+     *     message="The address should start with the name of the street followed by the house number"
+     * )
      */
     private $address;
     /**
      * @ORM\Column(type="integer", length=10, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^[0-9]{5}$/",
+     *     message="The post number should be a five-digit numbers"
+     * )
      */
     private $postNumber;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^[a-zA-Z]{2,}$/",
+     *     message="The city name should be at least 2 letters"
+     * )
      */
     private $city;
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
+     * @EUCountry
      */
     private $country;
 
