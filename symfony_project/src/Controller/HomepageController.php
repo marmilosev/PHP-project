@@ -14,5 +14,20 @@ class HomepageController extends AbstractController
      */
     public function homepage(){
         return $this->render('homepage/homepage.html.twig');
+        return $this->render('pages/homepage.html.twig');
+    }
+
+    /**
+     * @Route("/login.html.twig")
+     */
+    public function login(){
+        return $this->render('pages/login.html.twig');
+    }
+
+    /**
+     * @Route("/registration.html.twig")
+     */
+    public function registration(){
+        return $this->render('pages/registration.html.twig');
     }
 }
